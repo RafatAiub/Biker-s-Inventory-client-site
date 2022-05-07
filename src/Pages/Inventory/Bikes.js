@@ -5,7 +5,7 @@ import './Bikes.css'
 const Bikes = () => {
     const [bikes, setBikes] = useState([]);
     useEffect(() => {
-        fetch('bikes.json')
+        fetch('http://localhost:5000/bikes')
             .then(res => res.json())
             .then(data => setBikes(data));
 
