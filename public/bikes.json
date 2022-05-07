@@ -1,0 +1,65 @@
+[
+    {
+        "_id": 101,
+        "name": "HONDA",
+        "img": "https://bikerswarehouse.co.za/wp-content/uploads/New_Icon-Brand-Logos2-02-e1606894333219.png",
+        "description": "One of the best bike in this sub-continent. 150cc bike with looks very much attractive. It can be available in 3 different colors. ",
+        "price": "1.3 lc",
+        "quantity": "15",
+        "supplier": "Hero-Honda"
+    },
+    {
+        "_id": 102,
+        "name": "SUZUKI",
+        "img": "https://bikerswarehouse.co.za/wp-content/uploads/New_Icon-Brand-Logos2-03-e1606894315493.png",
+        "description": "One of the best bike in this sub-continent. 150cc bike with looks very much attractive. It can be available in 3 different colors.",
+        "price": "1.3 lc",
+        "quantity": "20",
+        "supplier": "Suzuki-Honda"
+    },
+    {
+        "_id": 103,
+        "name": "FREEWAY",
+        "img": "https://bikerswarehouse.co.za/wp-content/uploads/New_Icon-Brand-Logos2-05-e1606894277880.png",
+        "description": "One of the best bike in this sub-continent. 150cc bike with looks very much attractive. It can be available in 3 different colors.",
+        "price": "1.3 lc",
+        "quantity": "10",
+        "supplier": "free-way-honda"
+    },
+    {
+        "_id": 104,
+        "name": "TVS",
+        "img": "https://bikerswarehouse.co.za/wp-content/uploads/New_Icon-Brand-Logos2-07-e1606894229342.png",
+        "description": "One of the best bike in this sub-continent. 150cc bike with looks very much attractive. It can be available in 3 different colors.",
+        "price": "1.3 lc",
+        "quantity": "30",
+        "supplier": "TVS-honda"
+    },
+    {
+        "_id": 105,
+        "name": "Kawasaki",
+        "img": "https://bikerswarehouse.co.za/wp-content/uploads/kawa_cat_image2.png",
+        "description": "One of the best bike in this sub-continent. 150cc bike with looks very much attractive. It can be available in 3 different colors.",
+        "price": "1.3 lc",
+        "quantity": "24",
+        "supplier": "Kawasaki-honsda"
+    },
+    {
+        "_id": 106,
+        "name": "PUZEY",
+        "img": "https://bikerswarehouse.co.za/wp-content/uploads/New_Icon-Brand-Logos2-04-e1606894297695.png",
+        "description": "One of the best bike in this sub-continent. 150cc bike with looks very much attractive. It can be available in 3 different colors.",
+        "price": "1.3 lc",
+        "quantity": "12",
+        "supplier": "PUZEY-Honda"
+    },
+    {
+        "_id": 107,
+        "name": "BAJAJ",
+        "img": "https://bikerswarehouse.co.za/wp-content/uploads/New_Icon-Brand-Logos2-06-e1606894259543.png",
+        "description": "One of the best bike in this sub-continent. 150cc bike with looks very much attractive. It can be available in 3 different colors.",
+        "price": "1.3 lc",
+        "quantity": "23",
+        "supplier": "Bajaj-hero-Honda"
+    }
+]
