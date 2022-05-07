@@ -28,7 +28,7 @@ const Header = () => {
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
+                        <Nav.Link as={Link} to='contact-us'>Contact Us</Nav.Link>
                         {
                             user
                                 ?

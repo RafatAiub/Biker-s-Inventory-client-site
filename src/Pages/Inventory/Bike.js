@@ -3,10 +3,10 @@ import './Bike.css';
 import { useNavigate } from 'react-router-dom';
 
 const Bike = ({ bike }) => {
-    const { name, description, price, img } = bike;
+    const { name, description, price, img, _id } = bike;
     const navigate = useNavigate();
-    const navigateToServiceDetail = name => {
-        navigate(`/bikes/${name}`);
+    const navigateToUpdate = _id => {
+        navigate(`/inventory/${_id}`);
 
     }
     return (
@@ -17,7 +17,7 @@ const Bike = ({ bike }) => {
                     <h2>{name}</h2>
                     <p>Price: <span className='fw-bolder'>{price}</span> Tk</p>
                     <p className='fs-2 container-fluid'><small>{description}</small></p>
-                    <button onClick={() => navigateToServiceDetail(name)} className='btn rounded fw-bolder btn-outline-info fs-5'>Book for {name}</button>
+                    <button onClick={() => navigateToUpdate(_id)} className='btn rounded fw-bolder btn-outline-info fs-5'>Update</button>
                 </div>
             </div>
         </div>
