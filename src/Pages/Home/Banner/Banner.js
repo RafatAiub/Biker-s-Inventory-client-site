@@ -20,34 +20,34 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption className='text-danger'>
-                    <h3>We Know better</h3>
-                    <p className='fs-5'>Take the best treatment from DentiCare </p>
+                    <h3>We Know Your Choice</h3>
+                    <p className='fs-5'>Take the best Bike </p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
 
-                    className="d-block w-75 container-fluid"
+                    className="d-block w-50 container-fluid"
                     src={banner2}
                     alt="Second slide"
                 />
 
                 <Carousel.Caption className='text-info'>
-                    <h3>We Know better</h3>
-                    <p className='fs-5'>Take the best treatment from DentiCare </p>
+                    <h3>We Know Your Choice</h3>
+                    <p className='fs-5'>Take the best Bike </p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
 
-                    className="d-block w-75 container-fluid"
+                    className="d-block w-50 container-fluid"
                     src={banner3}
                     alt="Third slide"
                 />
 
                 <Carousel.Caption >
-                    <h3>We Know better</h3>
-                    <p className='fs-5'>Take the best treatment from DentiCare </p>
+                    <h3>We Know Your Choice</h3>
+                    <p className='fs-5'>Take the best Bike </p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
