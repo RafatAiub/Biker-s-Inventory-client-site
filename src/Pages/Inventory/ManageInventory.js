@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import BikeDetails from './BikeDetails';
 
 const ManageInventory = () => {
@@ -12,7 +12,7 @@ const ManageInventory = () => {
     }
     useEffect(() => {
         // fetch('https://nameless-bayou-34637.herokuapp.com/bikes')
-        fetch('http://localhost:5000/bikes')
+        fetch('https://nameless-bayou-34637.herokuapp.com/bikes')
             .then(res => res.json())
             .then(data => setBikes(data));
 

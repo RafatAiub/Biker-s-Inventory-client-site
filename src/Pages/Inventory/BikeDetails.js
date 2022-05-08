@@ -4,7 +4,7 @@ const BikeDetails = ({ bike }) => {
     const { name, supplier, price, img } = bike;
     const [bikes, setBikes] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/bikes')
+        fetch('https://nameless-bayou-34637.herokuapp.com/bikes')
             .then(res => res.json())
             .then(data => setBikes(data));
     }, [])
@@ -13,7 +13,7 @@ const BikeDetails = ({ bike }) => {
         const proceed = window.confirm('are you really want to delete this bike???')
         if (proceed) {
             console.log(id);
-            const url = `http://localhost:5000/bikes/${id}`;
+            const url = `https://nameless-bayou-34637.herokuapp.com/bikes/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

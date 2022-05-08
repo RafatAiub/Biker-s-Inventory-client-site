@@ -9,7 +9,7 @@ const AddInventory = () => {
         const quantity = e.target.quantity.value;
         const supplier = e.target.supplier.value;
         const bike = { name, img, description, price, quantity, supplier }
-        fetch('http://localhost:5000/bikes', {
+        fetch('https://nameless-bayou-34637.herokuapp.com/bikes', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

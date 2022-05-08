@@ -5,22 +5,22 @@ import { getAuth } from 'firebase/auth';
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// const firebaseConfig = {
-//     apiKey: "AIzaSyBeoEpbYs7RNYtiTaUq3OAkhR1kHFGhbTw",
-//     authDomain: "inventory-management-237cb.firebaseapp.com",
-//     projectId: "inventory-management-237cb",
-//     storageBucket: "inventory-management-237cb.appspot.com",
-//     messagingSenderId: "253337630796",
-//     appId: "1:253337630796:web:361d49a7ded0fa2f1c9ce9"
-// };
 const firebaseConfig = {
-    apiKey: process.env.API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGEING,
-    appId: process.env.APP_ID,
+    apiKey: "AIzaSyBeoEpbYs7RNYtiTaUq3OAkhR1kHFGhbTw",
+    authDomain: "inventory-management-237cb.firebaseapp.com",
+    projectId: "inventory-management-237cb",
+    storageBucket: "inventory-management-237cb.appspot.com",
+    messagingSenderId: "253337630796",
+    appId: "1:253337630796:web:361d49a7ded0fa2f1c9ce9"
 };
+// const firebaseConfig = {
+//     apiKey: process.env.API_KEY,
+//     authDomain: process.env.AUTH_DOMAIN,
+//     projectId: process.env.PROJECT_ID,
+//     storageBucket: process.env.STORAGE_BUCKET,
+//     messagingSenderId: process.env.MESSAGING,
+//     appId: process.env.APP_ID,
+// };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

@@ -1,4 +1,4 @@
-import { async } from '@firebase/util';
+// import { async } from '@firebase/util';
 import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
@@ -11,18 +11,18 @@ const Inventory = () => {
     // console.log(typeof (amount));
 
     useEffect(() => {
-        const uri = `http://localhost:5000/bikes/${_id}`;
+        const uri = `https://nameless-bayou-34637.herokuapp.com/bikes/${_id}`;
         fetch(uri)
             .then(res => res.json())
             .then(data => setBike(data))
-    }, [])
+    }, [_id])
 
     const handleUpdateQuantity = event => {
         event.preventDefault();
         const quantity = event.target.quantity.value;
         const updatedBike = { quantity };
 
-        const url = `http://localhost:5000/bikes/${_id}`;
+        const url = `https://nameless-bayou-34637.herokuapp.com/bikes/${_id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -47,7 +47,7 @@ const Inventory = () => {
         console.log(quantity);
         const updatedBike = { quantity };
 
-        const url = `http://localhost:5000/bikes/${_id}`;
+        const url = `https://nameless-bayou-34637.herokuapp.com/bikes/${_id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
