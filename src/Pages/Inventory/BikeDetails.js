@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const BikeDetails = ({ bike }) => {
     const { name, supplier, price, img } = bike;
+    const [bikes, setBikes] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/bikes')
+            .then(res => res.json())
+            .then(data => setBikes(data));
+    }, [])
+    const handleBikeDelete = id => {
+
+        const proceed = window.confirm('are you really want to delete this bike???')
+        if (proceed) {
+            console.log(id);
+            const url = `http://localhost:5000/bikes/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deleted > 0) {
+                        console.log('deleted');
+                        const remaining = bikes.filter(bike._id !== id);
+                        setBikes(remaining);
+
+                    }
+                })
+        }
+    }
 
     return (
         <div className='d-flex justify-content-around w-75 mx-auto align-items-center text-center shadow-lg m-5 rounded fw-bold'>
@@ -15,7 +41,7 @@ const BikeDetails = ({ bike }) => {
                 <br />
                 <span>Supplier</span>:{supplier}
             </div>
-            <div><button className='btn btn-outline-danger'>Delete</button></div>
+            <div><button onClick={() => { handleBikeDelete(bike._id) }} className='btn btn-outline-danger'>Delete</button></div>
         </div>
     );
 };
