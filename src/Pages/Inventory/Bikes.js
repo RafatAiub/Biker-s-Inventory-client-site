@@ -5,7 +5,8 @@ import './Bikes.css'
 const Bikes = () => {
     const [bikes, setBikes] = useState([]);
     useEffect(() => {
-        fetch('https://nameless-bayou-34637.herokuapp.com/bikes')
+        // fetch('https://nameless-bayou-34637.herokuapp.com/bikes')
+        fetch('http://localhost:5000/bikes')
             .then(res => res.json())
             .then(data => setBikes(data));
 
