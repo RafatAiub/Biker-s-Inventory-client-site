@@ -19,20 +19,31 @@ const Header = () => {
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
                         <Nav.Link className='link' as={Link} to="/about-me">About Me</Nav.Link>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                        {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
                     </Nav>
                     <Nav>
                         <Nav.Link as={Link} to='contact-us'>Contact Us</Nav.Link>
                         {
                             user
                                 ?
-                                <button className='btn btn-outline-danger text-decoration-none  fs-4' onClick={handleSignOut}>Sign Out</button>
+                                <>
+                                    <button className='btn btn-outline-danger text-decoration-none  fs-4' onClick={handleSignOut}>Sign Out</button>
+                                    <Nav.Link className='link' as={Link} to="/manageItems" >
+                                        Manage-Bikes
+                                    </Nav.Link>
+                                    <Nav.Link className='link' as={Link} to="/addItems" >
+                                        Add Bikes
+                                    </Nav.Link>
+                                    <Nav.Link className='link' as={Link} to="/myItems" >
+                                        My-Items
+                                    </Nav.Link>
+                                </>
                                 :
                                 <Nav.Link className='link' as={Link} to="/login" >
                                     Login
