@@ -24,9 +24,11 @@ const Inventory = () => {
                     <h4>Total reserve amount[{quantity}]</h4>
                     <p className='fst-italic'>{supplier}</p>
                     <p className='fw-bolder'>{description}</p>
-
+                    <button className='btn btn-outline-success'>Delivered</button>
                 </div>
             </div>
+
+
 
         </div>
     );
